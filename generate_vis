@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+
+import os
+
+path = './python'
+files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+
+for file in files:
+    base = os.path.basename(file)
+    output_file = os.path.splitext(base)[0] + ".json"
+    
+    os.system(f"./python/{file} vega/{output_file}")
