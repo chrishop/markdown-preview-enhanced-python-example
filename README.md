@@ -4,6 +4,16 @@
 
 You need to have already installed all the litvis extensions as per the instructions [here](https://github.com/gicentre/litvis)
 
+clone this repo
+```
+git clone https://github.com/chrishop/markdown-preview-enhanced-python-example.git
+```
+
+### Setup Python Environment
+
+** This is optional but I'd advise doing it anyway as its best practice**
+You can skip to how to use If you think you know what your doing!
+
 To use this template first you need to make a virtual python environment, this is to guarantee that it uses python 3 and has the required modules: 
 ```
 python3 -m pip install virtualenv
@@ -24,7 +34,7 @@ Now you can install altair in this new virtual python environment (and any other
 pip install altair numpy pandas
 ```
 
-Now put all the packages in a `requirements.txt` so that anyone else can install the necessary packages to run your project with `pip install -r requirements.txt`:
+Now put all the package names and versions in a `requirements.txt` so that anyone else can install the necessary packages to edit your project with `pip install -r requirements.txt`:
 ```
 pip freeze > requirements.txt
 ```
